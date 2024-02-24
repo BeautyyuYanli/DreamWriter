@@ -1,0 +1,38 @@
+[project]
+name = "dream_writer"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "盐粒 Yanli", email = "mail@yanli.one"},
+]
+dependencies = [
+    "proteus @ git+https://github.com/BeautyyuYanli/proteus.git",
+    "msgspec>=0.18.5",
+    "google-generativeai>=0.3.2",
+    "PyYAML>=6.0.1",
+    "streamlit>=1.31.0",
+    "streamlit-ace>=0.1.1",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+emb_server = [
+    "sentence-transformers>=2.4.0",
+    "mosec>=0.8.3",
+    "llmspec>=0.3.18",
+]
+[tool.pdm]
+distribution = true
+
+[tool.ruff]
+target-version = "py311"
+logger-objects = ["utils.logger.logger"]
+[tool.ruff.lint]
+select = ["E", "F", "G", "B", "I", "SIM", "TID", "PL", "RUF"]
+ignore = ["E501", "RUF001", "RUF003"]
+[tool.ruff.lint.isort]
+known-first-party = ["setulib_nt", "utils"]
+[tool.ruff.pylint]
+max-args = 7
