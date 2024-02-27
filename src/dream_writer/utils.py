@@ -84,7 +84,7 @@ if os.getenv("EMBEDDING_SERVICE_BASE", None):
         api_key="NOT_SET",
     )
 else:
-    emb_openai = openai.OpenAI()
+    emb_openai = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY", "NOT_SET"))
 
 
 def embed(texts: List[str]) -> List[np.ndarray]:

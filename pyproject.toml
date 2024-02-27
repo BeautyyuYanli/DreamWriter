@@ -33,6 +33,6 @@ logger-objects = ["utils.logger.logger"]
 select = ["E", "F", "G", "B", "I", "SIM", "TID", "PL", "RUF"]
 ignore = ["E501", "RUF001", "RUF003"]
 [tool.ruff.lint.isort]
-known-first-party = ["setulib_nt", "utils"]
+known-first-party = ["dream_writer"]
 [tool.ruff.pylint]
 max-args = 7

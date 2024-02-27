@@ -6,7 +6,7 @@ from dream_writer.tale.pipeline import (
 )
 from dream_writer.tale.structs import KnowledgeBase, Tale
 
-from webui.resource import (
+from dream_writer.webui.resource import (
     completion_writer,
     summary_writer,
 )

@@ -83,7 +83,7 @@ pip install ".[emb_server]"
 Now you can start the self-host embedding service:
 
 ```
-python src/emb_server.py
+python src/dream_writer/emb_server.py
 ```
 
 Then import the environment variable:
@@ -107,5 +107,5 @@ export OPENAI_API_KEY="your-openai-api-key"
 Finally, run the app:
 
 ```
-streamlit run src/webui/main.py
+streamlit run src/dream_writer/webui/main.py
 ```

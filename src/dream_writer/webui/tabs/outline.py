@@ -12,7 +12,7 @@ from dream_writer.utils import (
 )
 from streamlit_ace import st_ace
 
-from webui.resource import (
+from dream_writer.webui.resource import (
     outline_writer,
     time_indicator,
 )

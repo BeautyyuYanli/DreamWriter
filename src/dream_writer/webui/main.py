@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit_shadcn_ui as ui
 
-from webui.tabs import composition_tab, knowledge_tab, outline_tab
+from dream_writer.webui.tabs import composition_tab, knowledge_tab, outline_tab
 
 tab = ui.tabs(
     ["Outline", "Knowledge", "Composition"],
