@@ -1,11 +1,12 @@
 from typing import List
 
+from msgspec import Struct, field
+from proteus import ProteusMessage, ProteusMessagePrompt
+
 from dream_writer.utils import (
     TrivalWriter,
     struct_to_yaml,
 )
-from msgspec import Struct, field
-from proteus import ProteusMessage, ProteusMessagePrompt
 
 
 class Outline(Struct, kw_only=True, frozen=True):

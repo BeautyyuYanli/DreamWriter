@@ -1,9 +1,10 @@
 from typing import List
 
-from dream_writer.tale.writers.outline import Outline
-from dream_writer.utils import QAPair, TrivalWriter, struct_to_yaml
 from msgspec import Struct
 from proteus import ProteusMessage, ProteusMessagePrompt
+
+from dream_writer.tale.writers.outline import Outline
+from dream_writer.utils import QAPair, TrivalWriter, struct_to_yaml
 
 
 class Answer(Struct, kw_only=True, frozen=True):

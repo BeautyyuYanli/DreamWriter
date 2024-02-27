@@ -1,11 +1,12 @@
 from typing import Dict, List
 
+from msgspec import Struct
+from proteus import ProteusMessage, ProteusMessagePrompt
+
 from dream_writer.utils import (
     TrivalWriter,
     struct_to_builtin,
 )
-from msgspec import Struct
-from proteus import ProteusMessage, ProteusMessagePrompt
 
 
 class TaleTimeIndicatorWriter(TrivalWriter):

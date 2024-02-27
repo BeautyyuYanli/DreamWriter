@@ -1,7 +1,8 @@
 from typing import List
 
-from dream_writer.utils import TrivalWriter
 from proteus import ProteusMessage, ProteusMessagePrompt
+
+from dream_writer.utils import TrivalWriter
 
 
 class TaleSummaryWriter(TrivalWriter):

@@ -1,11 +1,11 @@
 from copy import deepcopy
 
 import streamlit as st
+
 from dream_writer.tale.pipeline import (
     generate_knowledge_base_from_outline,
 )
 from dream_writer.tale.structs import KnowledgeBase, Tale
-
 from dream_writer.webui.resource import (
     answer_writer,
     question_writer,

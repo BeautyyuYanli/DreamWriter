@@ -1,4 +1,6 @@
 import streamlit as st
+from streamlit_ace import st_ace
+
 from dream_writer.tale.pipeline import (
     match_all_knowledge_chapter_idx,
 )
@@ -10,8 +12,6 @@ from dream_writer.utils import (
     struct_to_yaml,
     yaml_to_struct,
 )
-from streamlit_ace import st_ace
-
 from dream_writer.webui.resource import (
     outline_writer,
     time_indicator,

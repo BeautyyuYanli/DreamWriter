@@ -1,11 +1,11 @@
 from typing import Optional
 
 import streamlit as st
+
 from dream_writer.tale.pipeline import (
     composite_chapter,
 )
 from dream_writer.tale.structs import KnowledgeBase, Tale
-
 from dream_writer.webui.resource import (
     completion_writer,
     summary_writer,

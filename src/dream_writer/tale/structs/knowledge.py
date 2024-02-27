@@ -1,6 +1,8 @@
 from typing import List, Optional, Tuple
 
 import numpy as np
+from msgspec import json
+
 from dream_writer.tale.writers.outline import Outline
 from dream_writer.utils import (
     QAPair,
@@ -8,7 +10,6 @@ from dream_writer.utils import (
     embed,
     struct_to_builtin,
 )
-from msgspec import json
 
 
 class Knowledge:

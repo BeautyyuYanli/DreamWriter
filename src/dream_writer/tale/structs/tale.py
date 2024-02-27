@@ -1,10 +1,11 @@
 from typing import List, Optional
 
+from msgspec import Struct
+
 from dream_writer.tale.writers.outline import Outline
 from dream_writer.utils import (
     struct_to_builtin,
 )
-from msgspec import Struct
 
 
 class Chapter(Struct, kw_only=True):

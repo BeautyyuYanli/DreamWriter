@@ -1,9 +1,10 @@
 from typing import Dict, List, Optional
 
+from proteus import ProteusMessage, ProteusMessagePrompt
+
 from dream_writer.utils import (
     TrivalWriter,
 )
-from proteus import ProteusMessage, ProteusMessagePrompt
 
 
 class TaleCompletionWriter(TrivalWriter):
